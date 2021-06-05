@@ -1,19 +1,18 @@
 package = "kong_injection"
 version = "1.0-1"
 source = {
-   url = "git+https://github.com/yhc19850706/kong_injection.git",
-   tag="v1.0-1",
+   url = "git://github.com/dsteinkopf/kong_injection",
    branch="master"
 }
 description = {
    summary = "# Kong plugin for detection of SQL injections and XSS code",
    detailed = "# Kong plugin for detection of SQL injections and XSS code",
-   homepage = "https://github.com/yhc19850706/kong_injection",
-   license = "*** please specify a license ***"
+   homepage = "https://github.com/dsteinkopf/kong_injection",
+   license = "MIT"
 }
 dependencies = {
-	  "lua >= 5.3.4",
-	  "resty.injection >=  1.0-1"
+	  "lua >= 5.1",
+	  "lua-resty-injection == dev-1"
 }
 build = {
    type = "builtin",
